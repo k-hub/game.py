@@ -37,6 +37,8 @@ except:
     print "This is not an integer."
     guess = int(raw_input("Your guess? "))
 
+# Number of tries
+tries = 0
 
 # While loop
 while True:
@@ -46,11 +48,14 @@ while True:
     elif guess > rand:
         print "Your guess is too high, try again."
         guess = int(raw_input("Your guess? "))
+        tries += 1
     elif guess < rand:
         print "Your guess is too low, try again."
         guess = int(raw_input("Your guess? "))
+        tries += 1
     else:
-        print "Congratulations, %s, you guessed my number!" % name
+        tries += 1
+        print "Congratulations, %s, you guessed my number in %s tries!" % (name, tries)
         play_again = raw_input("Would you like to play again? Y/N > ")
         if play_again == "Y" or play_again == "y":
             rand = randint(1, 100)
