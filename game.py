@@ -43,6 +43,6 @@ while True:
         guess = int(raw_input("Your guess? "))
     else:
         print "Congratulations, %s, you guessed my number!" % name
-        #break
+        break
 
 
