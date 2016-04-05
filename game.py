@@ -33,5 +33,11 @@ print "random number: ", rand
 # User guess
 guess = int(raw_input("I'm thinking of a number between 1 and 100. Guess my number: "))
 
+# While loop
+while True:
+    if guess > rand:
+        print "Your guess is too high, try again."
+        guess = int(raw_input("Your guess? "))
+
 
 
