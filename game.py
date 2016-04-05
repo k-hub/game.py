@@ -21,7 +21,7 @@
 #         break
        
 
-
+# Greet the Player
 name = raw_input("Hi, what's your name? ")
 print "%s, let's play a guessing game!" % name
 
@@ -30,7 +30,8 @@ from random import randint
 rand = randint(1, 100)
 print "random number: ", rand
 
-
+# User guess
+guess = int(raw_input("I'm thinking of a number between 1 and 100. Guess my number: "))
 
 
 
