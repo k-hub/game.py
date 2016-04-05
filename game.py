@@ -38,6 +38,11 @@ while True:
     if guess > rand:
         print "Your guess is too high, try again."
         guess = int(raw_input("Your guess? "))
-
+    elif guess < rand:
+        print "Your guess is too low, try again."
+        guess = int(raw_input("Your guess? "))
+    else:
+        print "Congratulations, %s, you guessed my number!" % name
+        break
 
 
