@@ -61,6 +61,7 @@ while True:
             rand = randint(1, 100)
             print "random number: ", rand
             guess = int(raw_input("I'm thinking of a number between 1 and 100. Guess my number: "))
+            tries = 0
         elif play_again == "N" or play_again == "n":
             print "Goodbye, %s" % name
             break
