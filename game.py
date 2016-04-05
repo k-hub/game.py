@@ -21,9 +21,6 @@
 #         break
        
 
-from random import randint
-rand = randint(1, 100)
-print "random number:", rand
 
 name = raw_input("Hi, what's your name? ")
 print "%s, let's play a guessing game!" % name
