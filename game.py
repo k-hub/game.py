@@ -51,10 +51,15 @@ while True:
         guess = int(raw_input("Your guess? "))
     else:
         print "Congratulations, %s, you guessed my number!" % name
-        play_again = raw_input("Would you like to play again? Y/N ")
-        if play_again == "Y" or "y":
+        play_again = raw_input("Would you like to play again? Y/N > ")
+        if play_again == "Y" or play_again == "y":
             rand = randint(1, 100)
-    
-        break
-
+            print "random number: ", rand
+            guess = int(raw_input("I'm thinking of a number between 1 and 100. Guess my number: "))
+        elif play_again == "N" or play_again == "n":
+            print "Goodbye, %s" % name
+            break
+        else:
+            print "That's not a valid answer. Please choose 'Y' or 'N'."
+            play_again = raw_input("Would you like to play again? Y/N ")
 
